@@ -28,8 +28,8 @@ class Cone(Cylindre):
         Cylindre.__init__(self, hauteur, rayon)
         self.nom = "Cone"
         
-    def volume_cone(self):
-        v = self.volume()/3
+    def volume(self):
+        v = Cylindre.volume()/3
         return(v)
 
 cercle = Cercle(5)
